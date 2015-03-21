@@ -6,14 +6,14 @@ var work = {
 		"employer" : "University of South Florida",
 		"location" : "Tampa, FL, US",
 		"dates" : "January, 2012 - Present",
-		"description" : "Research"
+		"description" : "Investigated ground deformation associated with fluid injection and extraction at an Enhanced Oil Recovery Site in Texas using satellite images and numerical models. Wrote Fortran and Matlab programs for data analysis and numerical modeling."
 	},
 	{
 		"title" : "Research Assistant",
 		"employer" : "University of Miami",
 		"location" : "Miami, FL, US",
 		"dates" : "August, 2010 - December, 2012",
-		"description" : "Research"
+		"description" : "Wrote shell scripts to implement online data collecting and offline data processing.  Wrote Matlab programs for data analysis including outlier detection, linear regression and Kalman filtering. "
 	}
 	]
 }
@@ -21,28 +21,42 @@ var work = {
 var pro = {
 	"projects" : [
 	{
-		"title" : "Portfolio Mockup to HTML",
+		"title" : "Portfolio",
 		"dates" : 2015,
-		"description" : "Develop responsive website that will display images, descriptions and links to each of the portfolio projects",
-        "images" : [" "]
+		"description" : "This website is written in HTML and CSS to mimic a given desgin mockup. The website is buildup on the Twitter's Bootstrap framework.  It is designed responsively to display images, descriptions and links to each of the portfolio projects I complete throughout the course of the Front-End Web Developer Nanodegree.",
+        "images" : ["./images/pro1_snapshot.jpg"]
 	},
 	{
 		"title" : "Interactive Resume",
 		"dates" : 2015,
-		"description" : "Develop an interactive resume application that reads resume content from a JSON file and dynamically display that content within a provided template",
-		"images" : [" "]
+		"description" : "Project description is coming",
+		"images" : ["./images/placeholder.jpg"]
 	},
 	{
-		"title" : "Time series analysis using Kalman filter",
-		"dates" : 2014,
-		"description" : "Apply Kalman filter to study time-varying trend and seasonal signals of GPS time series",
-        "images" : [" "]
+		"title" : "Classic Arcade Game",
+		"dates" : 2015,
+		"description" : "Project description is coming",
+        "images" : ["./images/placeholder.jpg"]
 	},
 	{
-		"title" : "Pressure buildup caused by Carbon sequestration",
-		"dates" : 2014, 
-		"description" : "Model reservior pressure build up caused by CO2 injection in an EOR field, TX",
-		"images" : [" "]
+		"title" : "Website optimization",
+		"dates" : 2015, 
+		"description" : "Project description is coming",
+		"images" : ["./images/placeholder.jpg"]
+	
+	},
+	{
+		"title" : "Neighborhood Map",
+		"dates" : 2015, 
+		"description" : "Project description is coming",
+		"images" : ["./images/placeholder.jpg"]
+	
+	},
+	{
+		"title" : "Feed Reader Testing",
+		"dates" : 2015, 
+		"description" : "Project description is coming",
+		"images" : ["./images/placeholder.jpg"]
 	
 	}]
 }
@@ -52,7 +66,7 @@ var bio = {
 	"role" : "Web Developer",
 	"welcomeMessage" : "Hi! I'm Qian. I love to learn, especially about writing programs to solve challenging problems.",
 	"images" : "./images/me.JPG",
-	"skills" : ["Python","HTML&CSS","JavaScript","jQuery","SQL","Fortran","Matlab","Statistics","Data analysis","Modeling"],
+	"skills" : ["Python","HTML&CSS","JavaScript","jQuery","SQL","Fortran","Matlab"],
 	"contacts" : 
 	{
 		"mobile" : "305-989-1908",
@@ -114,7 +128,7 @@ var education = {
 		"url" : "https://www.udacity.com/course/ud804"
 	},
 	{
-		"title" : "",
+		"title" : "Databases",
 		"school" : "Standord OnlineCourses",
 		"dates" : 2015,
 		"url" : "https://class.stanford.edu/courses/DB/2014/SelfPaced/about"
@@ -191,7 +205,6 @@ pro.display = function() {
 }
 
 //Function to display education information 
-
 education.display = function() {
 	for (school in education.schools) {
 		$("#education").append(HTMLschoolStart);
@@ -208,6 +221,16 @@ education.display = function() {
 			var formattedSchoolMajor = HTMLschoolMajor.replace("%data%",education.schools[school].majors[major]);
 			$(".education-entry:last").append(formattedSchoolMajor);
 		}
+	}
+
+	$(".education-entry:last").append(HTMLonlineClasses);
+
+	for (course in education.onlineCourses) {
+		var formattedClassTitle = HTMLonlineTitle.replace("%data%",education.onlineCourses[course].title);
+		var formattedClassSchool = HTMLonlineSchool.replace("%data%",education.onlineCourses[course].school);
+		var formattedClassDates = HTMLonlineDates.replace("%data%",education.onlineCourses[course].dates);
+		var formattedClassUrl = HTMLonlineURL.replace("%data%",education.onlineCourses[course].url);
+		$(".education-entry:last").append(formattedClassTitle + formattedClassSchool);
 	}
 
 }
