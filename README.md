@@ -11,5 +11,6 @@ The repository includes the following files:
 * **js/resumeBuilder.js**: Contains code to build the resume.
 * **js/jQuery.js**: The jQuery library.
 * **css/style.css**: Contains all of the CSS needed to style the page.
+* **css/normalize.css**: A customisable CSS file that makes browsers render all elements more consistently and in line with modern standards.
 * **README.md**: The GitHub readme file.
 * **images/**: Some images in the images directory.
