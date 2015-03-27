@@ -24,41 +24,9 @@ var pro = {
 		"title" : "Portfolio",
 		"dates" : 2015,
 		"description" : "This website is written in HTML and CSS to mimic a given desgin mockup. The website is buildup on the Twitter's Bootstrap framework.  It is designed responsively to display images, descriptions and links to each of the portfolio projects I complete throughout the course of the Front-End Web Developer Nanodegree.",
-        "images" : ["./images/pro1_snapshot.jpg"]
-	},
-	{
-		"title" : "Interactive Resume",
-		"dates" : 2015,
-		"description" : "Project description is coming",
-		"images" : ["./images/placeholder.jpg"]
-	},
-	{
-		"title" : "Classic Arcade Game",
-		"dates" : 2015,
-		"description" : "Project description is coming",
-        "images" : ["./images/placeholder.jpg"]
-	},
-	{
-		"title" : "Website optimization",
-		"dates" : 2015, 
-		"description" : "Project description is coming",
-		"images" : ["./images/placeholder.jpg"]
-	
-	},
-	{
-		"title" : "Neighborhood Map",
-		"dates" : 2015, 
-		"description" : "Project description is coming",
-		"images" : ["./images/placeholder.jpg"]
-	
-	},
-	{
-		"title" : "Feed Reader Testing",
-		"dates" : 2015, 
-		"description" : "Project description is coming",
-		"images" : ["./images/placeholder.jpg"]
-	
-	}]
+        "images" : ["./images/p1.png"]
+	}
+	]
 }
 
 var bio = {
@@ -222,15 +190,17 @@ education.display = function() {
 			$(".education-entry:last").append(formattedSchoolMajor);
 		}
 	}
+	if (education.onlineCourses.length > 0) {
+		$("#education").append(HTMLonlineClasses);
 
-	$(".education-entry:last").append(HTMLonlineClasses);
-
-	for (course in education.onlineCourses) {
-		var formattedClassTitle = HTMLonlineTitle.replace("%data%",education.onlineCourses[course].title);
-		var formattedClassSchool = HTMLonlineSchool.replace("%data%",education.onlineCourses[course].school);
-		var formattedClassDates = HTMLonlineDates.replace("%data%",education.onlineCourses[course].dates);
-		var formattedClassUrl = HTMLonlineURL.replace("%data%",education.onlineCourses[course].url);
-		$(".education-entry:last").append(formattedClassTitle + formattedClassSchool);
+		for (course in education.onlineCourses) {
+			$("#education").append(HTMLschoolStart);
+			var formattedClassTitle = HTMLonlineTitle.replace("%data%",education.onlineCourses[course].title);
+			var formattedClassSchool = HTMLonlineSchool.replace("%data%",education.onlineCourses[course].school);
+			var formattedClassDates = HTMLonlineDates.replace("%data%",education.onlineCourses[course].dates);
+			var formattedClassUrl = HTMLonlineURL.replace("%data%",education.onlineCourses[course].url);
+			$(".education-entry:last").append(formattedClassTitle + formattedClassSchool);
+		}
 	}
 
 }
@@ -260,7 +230,7 @@ function inName(namestring) {
 	return firstnamenew + " " + lastnamenew;
 }
 //add a button at the bottom of page 
-$("#main").append(internationalizeButton);
+$("#home").append(internationalizeButton);
 
 
 //Display a map showing live and work place
