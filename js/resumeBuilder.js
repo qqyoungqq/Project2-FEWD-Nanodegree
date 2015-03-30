@@ -23,7 +23,7 @@ var pro = {
 	{
 		"title" : "Portfolio",
 		"dates" : 2015,
-		"description" : "This website is written in HTML and CSS to mimic a given desgin mockup. The website is buildup on the Twitter's Bootstrap framework.  It is designed responsively to display images, descriptions and links to each of the portfolio projects I complete throughout the course of the Front-End Web Developer Nanodegree.",
+		"description" : "HTML, CSS, Twitter's Bootstrap, and responsive design.",
         "images" : ["./images/p1.png"]
 	}
 	]
