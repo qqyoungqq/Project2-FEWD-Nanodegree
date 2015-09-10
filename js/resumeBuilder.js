@@ -6,14 +6,17 @@ var work = {
 		"employer" : "University of South Florida",
 		"location" : "Tampa, FL, US",
 		"dates" : "January, 2012 - Present",
-		"description" : "Investigated ground deformation associated with fluid injection and extraction at an Enhanced Oil Recovery Site in Texas using satellite images and numerical models. Wrote Fortran and Matlab programs for data analysis and numerical modeling."
+		"description" : ["●	Built a website for the Geodesy Lab of University of South Florida",
+		"●	Maintained and updated the website to ensure new research projects and new published papers were posted in time",
+		"●	Wrote computer programs to effectively collect, analyze and visualize research related data"]
 	},
 	{
 		"title" : "Research Assistant",
 		"employer" : "University of Miami",
 		"location" : "Miami, FL, US",
-		"dates" : "August, 2010 - December, 2012",
-		"description" : "Wrote shell scripts to implement online data collecting and offline data processing.  Wrote Matlab programs for data analysis including outlier detection, linear regression and Kalman filtering. "
+		"dates" : "August, 2010 - December, 2011",
+		"description" : ["●	Wrote shell scripts to batch process high volumes of data without manual intervention",
+		"●	Presented research results clearly and logically in written and oral form"]
 	}
 	]
 }
@@ -21,11 +24,29 @@ var work = {
 var pro = {
 	"projects" : [
 	{
-		"title" : "Portfolio",
+		"title" : "Feed Reader Testing",
 		"dates" : 2015,
-		"description" : "HTML, CSS, Twitter's Bootstrap, and responsive design.",
-        "images" : ["./images/p1.png"]
-	}
+		"description" : "JavaScript Testing Framework - Jasmine",
+        "images" : ["./images/p6.png"]
+	},
+	{
+		"title" : "Neighborhood Map",
+		"dates" : 2015,
+		"description" : "Knockout.js   |   JavaScript   |   AJAX",
+        "images" : ["./images/p5.png"]
+	},
+	{
+		"title" : "Website Optimization",
+		"dates" : 2015,
+		"description" : "Chrome Dev Tools   |   Critical Rendering Path   |   Gulp",
+        "images" : ["./images/p4.png"]
+	},
+	{
+		"title" : "Classic Arcade Game Clone",
+		"dates" : 2015,
+		"description" : "Object-Oriented Programming   |   JavaScript   |   HTML5 Canvas",
+        "images" : ["./images/p3.png"]
+	}	
 	]
 }
 
@@ -34,11 +55,11 @@ var bio = {
 	"role" : "Web Developer",
 	"welcomeMessage" : "Hi! I'm Qian. I love to learn, especially about writing programs to solve challenging problems.",
 	"images" : "./images/me.JPG",
-	"skills" : ["Python","HTML&CSS","JavaScript","jQuery","SQL","Fortran","Matlab"],
+	"skills" : ["JavaScript","Python","HTML&CSS","jQuery","Knockout.js","Jasmine","Bootstrap","Gulp","SQL","Git/GitHub","Matlab","Shell"],
 	"contacts" : 
 	{
 		"mobile" : "305-989-1908",
-		"email" : "qianyang@mail.usf.edu",
+		"email" : "yang.q2006@gmail.com",
 		"github" : "qqyoungqq",
 		"location" : "Tampa, FL"
 	}
@@ -47,6 +68,14 @@ var bio = {
 
 var education = {
 	"schools" : [
+	{
+		"name" : "Udacity",
+		"location" : "Online",
+		"degree" : "Nanodegree",
+		"majors" : ["Front-End Web Developer"], 
+		"dates" : 2015,
+		"url" : "http://hennarot.forest.usf.edu/main/depts/geosci/"
+	},	
 	{
 		"name" : "University of South Florida",
 		"location" : "Tampa, FL, US",
@@ -66,16 +95,70 @@ var education = {
 	],
 	"onlineCourses" : [
 	{
-		"title" : "Introduction to Computer Science",
+		"title" : "JavaScript Testing",
 		"school" : "Udacity",
 		"dates" : 2015,
-		"url" : "https://www.udacity.com/course/cs101"
+		"url" : "https://www.udacity.com/course/ud549"
+	},	
+	{
+		"title" : "JavaScript Design Patterns",
+		"school" : "Udacity",
+		"dates" : 2015,
+		"url" : "https://www.udacity.com/course/ud989"
 	},
+	{
+		"title" : "Object-Oriented JavaScript",
+		"school" : "Udacity",
+		"dates" : 2015,
+		"url" : "https://www.udacity.com/course/ud015"
+	},
+	{
+		"title" : "JavaScript Basics",
+		"school" : "Udacity",
+		"dates" : 2015,
+		"url" : "https://www.udacity.com/course/ud804"
+	},
+	{
+		"title" : "Browser Rendering Optimization",
+		"school" : "Udacity",
+		"dates" : 2015,
+		"url" : "https://www.udacity.com/course/ud860"
+	},
+	{
+		"title" : "Website Performance Optimization",
+		"school" : "Udacity",
+		"dates" : 2015,
+		"url" : "https://www.udacity.com/course/ud884"
+	},	
+	{
+		"title" : "Intro to jQuery",
+		"school" : "Udacity",
+		"dates" : 2015,
+		"url" : "https://www.udacity.com/course/ud245"
+	},
+	{
+		"title" : "Intro to AJAX",
+		"school" : "Udacity",
+		"dates" : 2015,
+		"url" : "https://www.udacity.com/course/ud110"
+	},			
+	{
+		"title" : "HTML5 Canvas",
+		"school" : "Udacity",
+		"dates" : 2015,
+		"url" : "https://www.udacity.com/course/ud292"
+	},	
 	{
 		"title" : "Intro to HTML and CSS",
 		"school" : "Udacity",
 		"dates" : 2015,
 		"url" : "https://www.udacity.com/course/ud304"
+	},
+	{
+		"title" : "Introduction to Computer Science",
+		"school" : "Udacity",
+		"dates" : 2015,
+		"url" : "https://www.udacity.com/course/cs101"
 	},
 	{
 		"title" : "Responsive Web Design Fundamentals",
@@ -88,12 +171,6 @@ var education = {
 		"school" : "Udacity",
 		"dates" : 2015,
 		"url" : "https://www.udacity.com/course/ud775"
-	},
-	{
-		"title" : "JavaScript Basics",
-		"school" : "Udacity",
-		"dates" : 2015,
-		"url" : "https://www.udacity.com/course/ud804"
 	},
 	{
 		"title" : "Databases",
@@ -135,20 +212,21 @@ bio.display = function() {
 //Function to display work information 
 work.display = function() { 
 	for (subjobs in work.jobs) {
-	$("#workExperience").append(HTMLworkStart);
+		$("#workExperience").append(HTMLworkStart);
 
-	var formattedEmployer = HTMLworkEmployer.replace("%data%",work.jobs[subjobs].employer);
-    var formattedTitle = HTMLworkTitle.replace("%data%",work.jobs[subjobs].title);
-    var formattedEmployerTitle = formattedEmployer + formattedTitle
-
-    var formattedDates = HTMLworkDates.replace("%data%",work.jobs[subjobs].dates);
-    var formattedLocation = HTMLworkLocation.replace("%data%",work.jobs[subjobs].location);
-    var formattedDatesLocation = formattedDates + formattedLocation;
-    var formattedDesciption = HTMLworkDescription.replace("%data%",work.jobs[subjobs].description);
+		var formattedEmployer = HTMLworkEmployer.replace("%data%",work.jobs[subjobs].employer);
+    	var formattedTitle = HTMLworkTitle.replace("%data%",work.jobs[subjobs].title);
+    	var formattedEmployerTitle = formattedEmployer + formattedTitle
+    	var formattedDatesLocation = HTMLworkLocationDates.replace("%location%",work.jobs[subjobs].location).replace("%date%",work.jobs[subjobs].dates);
     
-	$(".work-entry:last").append(formattedEmployerTitle);
-    $(".work-entry:last").append(formattedDatesLocation);
-    $(".work-entry:last").append(formattedDesciption);
+		$(".work-entry:last").append(formattedEmployerTitle);
+		$(".work-entry:last").append(formattedDatesLocation);
+		var formattedDesciption='';
+    	for (jobdesp in work.jobs[subjobs].description) {
+    		var temp = HTMLworkDescription.replace("%data%",work.jobs[subjobs].description[jobdesp]);
+    		formattedDesciption = formattedDesciption + temp;
+    	}
+    	$(".work-entry:last").append(formattedDesciption);
 	}	
 }
 
@@ -160,15 +238,15 @@ pro.display = function() {
 		var formattedProjectDates = HTMLprojectDates.replace("%data%",pro.projects[subproject].dates);
 		var formattedProjectDescription = HTMLprojectDescription.replace("%data%",pro.projects[subproject].description);
 		$(".project-entry:last").append(formattedProjectTitle);
-		$(".project-entry:last").append(formattedProjectDates);
-		$(".project-entry:last").append(formattedProjectDescription);
+		//$(".project-entry:last").append(formattedProjectDescription);
 		
 		if (pro.projects[subproject].images.length > 0) {
 			for (image in pro.projects[subproject].images) {
 				var formattedProjectImage = HTMLprojectImage.replace("%data%",pro.projects[subproject].images[image]);
 				$(".project-entry:last").append(formattedProjectImage);
 			}
-		}	
+		}
+		$(".project-entry:last").append(formattedProjectDescription);	
 	}
 }
 
@@ -178,12 +256,9 @@ education.display = function() {
 		$("#education").append(HTMLschoolStart);
 		var formattedSchoolName = HTMLschoolName.replace("%data%",education.schools[school].name);
 		var formattedSchoolDegree = HTMLschoolDegree.replace("%data%",education.schools[school].degree);
-		var formattedSchoolDates = HTMLschoolDates.replace("%data%",education.schools[school].dates);
-		var formattedSchoolLocation = HTMLschoolLocation.replace("%data%",education.schools[school].location);
-
+		var formattedSchoolLocationDates = HTMLschoolLocationDates.replace("%location%",education.schools[school].location).replace("%date%",education.schools[school].dates);
 		$(".education-entry:last").append(formattedSchoolName+formattedSchoolDegree);
-		$(".education-entry:last").append(formattedSchoolDates);
-		$(".education-entry:last").append(formattedSchoolLocation);
+		$(".education-entry:last").append(formattedSchoolLocationDates);
 
 		for (major in education.schools[school].majors) {
 			var formattedSchoolMajor = HTMLschoolMajor.replace("%data%",education.schools[school].majors[major]);
@@ -195,10 +270,8 @@ education.display = function() {
 
 		for (course in education.onlineCourses) {
 			$("#education").append(HTMLschoolStart);
-			var formattedClassTitle = HTMLonlineTitle.replace("%data%",education.onlineCourses[course].title);
+			var formattedClassTitle = HTMLonlineTitle.replace("%data%",education.onlineCourses[course].title).replace("%url%",education.onlineCourses[course].url);
 			var formattedClassSchool = HTMLonlineSchool.replace("%data%",education.onlineCourses[course].school);
-			var formattedClassDates = HTMLonlineDates.replace("%data%",education.onlineCourses[course].dates);
-			var formattedClassUrl = HTMLonlineURL.replace("%data%",education.onlineCourses[course].url);
 			$(".education-entry:last").append(formattedClassTitle + formattedClassSchool);
 		}
 	}
