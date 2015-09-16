@@ -174,7 +174,7 @@ var education = {
 	},
 	{
 		"title" : "Databases",
-		"school" : "Standord OnlineCourses",
+		"school" : "Stanford OnlineCourses",
 		"dates" : 2015,
 		"url" : "https://class.stanford.edu/courses/DB/2014/SelfPaced/about"
 	}
